@@ -1,2 +1,1 @@
-# Web-Portfolio-Tinotenda
-Personal Portfolio website
+This is Tino Personal Portfolio website written in angular

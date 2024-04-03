@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <br>
+                <h2>About Me</h2>
+                <br>
+                <img src="../../assets/tino.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
+                <br>
+                <br>
+                <p>I am a passionate and dedicated software developer with a keen interest
+                    in crafting efficient, scalable, and innovative solutions. With a solid foundation in
+                    computer science and a wealth of hands-on experience, I thrive in turning complex problems
+                    into elegant and user-friendly software applications.</p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <br>
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+                </div> 
+            </carousel>
+
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more ! </p>
+
+
+           
+        </div> 
+    </div>
+</div>
